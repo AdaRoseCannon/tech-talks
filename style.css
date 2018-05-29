@@ -1,0 +1,146 @@
+/* CSS files add styling rules to your content */
+@import url('https://fonts.googleapis.com/css?family=Lily+Script+One|Open+Sans:300,400');
+
+:root {
+  --color1: #6B59FF;
+  --color2: #CD84E8;
+  --color3: #FFF0F5;
+  --color4: #E85B2F;
+  --color5: #FFCB84;
+  --angle-height: 10vw;
+  --angle-dir: left;
+  --next-color: var(--color1);
+  --sans: 'Open Sans', Sans;
+}
+
+h1,h2,h3 {
+  font-family: lily script one, fantasy;
+  font-display: optional;
+  font-weight: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Sans;
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 3vw;
+  background-color: var(--color3);
+  color: var(--color4);
+  padding-left: 1em;
+  display: grid !important;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: min-content;
+}
+
+header > h1 {
+  display: inline-block;
+}
+
+header > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: bottom right;
+}
+
+
+body {
+  background-color: var(--color2);
+}
+
+section {
+  padding-bottom: var(--angle-height);
+  color: var(--color3);
+}
+
+p {
+  padding: 0 1em; 
+}
+
+section > * {
+  max-width: 1024px;
+  margin: 0.5em auto; 
+}
+
+section:nth-of-type(5n+1) {
+  background-color: var(--color1);
+  --next-color: var(--color2);
+}
+
+section:nth-of-type(5n+2) {
+  background-color: var(--color2);
+  --next-color: var(--color3);
+}
+
+section:nth-of-type(5n+3) {
+  background-color: var(--color3);
+  --next-color: var(--color4);
+  color: black;
+}
+
+section:nth-of-type(5n+4) {
+  background-color: var(--color4);
+  --next-color: var(--color5);
+}
+
+section:nth-of-type(5n+5) {
+  background-color: var(--color5);
+  --next-color: var(--color1);
+  color: black;
+}
+
+header:nth-child(odd), section:nth-child(odd) {
+  --angle-dir: right;
+}
+
+header:nth-child(even), section:nth-child(even) {
+  --angle-dir: left;
+}
+
+section:last-of-type {
+  --next-color: var(--color5);
+}
+
+footer {
+  background-color: var(--color5);
+  padding: 1rem;
+}
+
+footer > p {
+  max-width: 1024px;
+  margin: auto; 
+}
+
+.big-t {
+  font-size: 1.5em;
+  line-height: 0.66em;
+}
+
+.angle {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.angle:after {
+  content: '';
+  display: block;
+  height: var(--angle-height);
+  background: linear-gradient(to bottom var(--angle-dir), transparent 50%, var(--next-color) 50.5%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+h2 {
+  font-size: 2.5em;
+}
