@@ -35,6 +35,7 @@ header {
   background-color: var(--color3);
   color: var(--color4);
   padding-left: 1em;
+  display: flex !important;
   display: grid !important;
   grid-template-columns: max-content 1fr;
   grid-template-rows: min-content;
@@ -42,6 +43,8 @@ header {
 
 header > h1 {
   display: inline-block;
+  min-width: -moz-max-content;
+  min-width: max-content;
 }
 
 header > img {
@@ -49,6 +52,8 @@ header > img {
   height: 100%;
   object-fit: contain;
   object-position: bottom right;
+  max-height: 80vh;
+  align-self: flex-end;
 }
 
 
