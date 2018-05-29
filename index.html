@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Ada's Twitch Tech Talks</title>
+    <meta name="description" content="Freeform interactive tech talks done live on Twitch. Looking at the latest in front end web technology.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ada Rose Cannon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lady_ada_king">
+    <meta name="twitter:title" content="Ada's Twitch Tech Talks">
+    <meta name="twitter:description" content="Freeform interactive tech talks. Looking at the latest in front end web technology.">
+    <meta name="twitter:image" content="https://cdn.glitch.com/b4e736b0-181d-4f63-85cb-f652222b1c8e%2Fimage.png?1527607423860">
+  </head>  
+  <body>
+    <header class="angle" style="--next-color: var(--color1);">
+      <h1><span style="font-size: 1.3em;"><span class="big-t">A</span>da<span style="letter-spacing: -0.2em;">'</span>s</span><br />
+      &emsp;<span class="big-t">T</span>witch<br />
+      &emsp;&emsp;<span class="big-t">T</span>ech<br />
+      &emsp;&emsp;&emsp;<span class="big-t">T</span>alks
+      </h1>
+      <img src="https://cdn.glitch.com/b4e736b0-181d-4f63-85cb-f652222b1c8e%2FAda%20Pod%20Cast.svg?1527600160834" alt="Logo Image, Cartoon of Ada sitting at a microphone.">
+    </header>
+    
+    <section class="angle">
+      <h2>
+        Stream
+      </h2>
+        
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed"></div>
+      <ul>
+        <li>The format is a long form tech talk.</li>
+        <li>The content is not scripted or fixed to encourage diversions.</li>
+        <li>The length will vary depending on the questions, or I get too tired.</li>
+        <li>Asking questions during the stream via the chat is encouraged.</li>
+        <li>Treat other participants in the stream with kindness and respect.</li>
+        <li>Trolls will be muted or kicked without warning.</li>
+      </ul>
+
+      <!-- Load the Twitch embed script -->
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+      <script type="text/javascript">
+        new Twitch.Embed("twitch-embed", {
+          width: '100%',
+          height: 480,
+          channel: "adaplaysoverwatch"
+        });
+      </script>
+        
+      
+    </section>
+      
+      
+    <section class="angle">
+      <h2>
+        Schedule
+      </h2>
+      <p>
+        The next talk is scheduled for: <br />
+        <span style="font-size: 2em; margin: 0.5em 0; display: inline-block; font-weight: bold;">Wednesday June 6th at 6.30pm GMT</span><br />
+          The topic, as voted for on twitter, will be Isomorphic Rendering and HyperHTML. Where I will walk through a demo of using HyperHTMl, Native es6 imports to set up a single template that works server side and client side.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        &copy; Copyright 2018 Ada Rose Cannon.
+      </p>
+    </footer>
+  </body>
+</html>
