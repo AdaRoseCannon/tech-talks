@@ -77,22 +77,22 @@ section > * {
 
 section:nth-of-type(5n+1) {
   background-color: var(--color1);
-  --next-color: var(--color2);
+  --next-color: var(--color4);
 }
 
 section:nth-of-type(5n+2) {
-  background-color: var(--color2);
+  background-color: var(--color4);
   --next-color: var(--color3);
 }
 
 section:nth-of-type(5n+3) {
   background-color: var(--color3);
-  --next-color: var(--color4);
+  --next-color: var(--color2);
   color: black;
 }
 
 section:nth-of-type(5n+4) {
-  background-color: var(--color4);
+  background-color: var(--color2);
   --next-color: var(--color5);
 }
 
@@ -106,12 +106,20 @@ header:nth-child(odd), section:nth-child(odd) {
   --angle-dir: right;
 }
 
+header:nth-child(odd) > h2:first-child, section:nth-child(odd) > h2:first-child {
+  margin-top: calc(-0.5 * var(--angle-height));
+}
+
 header:nth-child(even), section:nth-child(even) {
   --angle-dir: left;
 }
 
 section:last-of-type {
   --next-color: var(--color5);
+}
+
+a, a:visited, a:active {
+  color: inherit;
 }
 
 footer {
