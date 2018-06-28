@@ -1,5 +1,5 @@
 /* CSS files add styling rules to your content */
-@import url('https://fonts.googleapis.com/css?family=Lily+Script+One|Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:300,400');
 
 :root {
   --color1: #6B59FF;
@@ -14,9 +14,9 @@
 }
 
 h1,h2,h3 {
-  font-family: lily script one, fantasy;
+  font-family: Comfortaa, fantasy;
   font-display: optional;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 html, body {
@@ -30,15 +30,15 @@ html, body {
   box-sizing: border-box;
 }
 
-header {
+header.angle {
   font-size: 3vw;
   background-color: var(--color3);
   color: var(--color4);
-  padding-left: 1em;
   display: flex !important;
   display: grid !important;
   grid-template-columns: max-content 1fr;
   grid-template-rows: min-content;
+  padding: 0 1em;
 }
 
 header > h1 {
@@ -62,12 +62,7 @@ body {
 }
 
 section {
-  padding-bottom: var(--angle-height);
   color: var(--color3);
-}
-
-p {
-  padding: 0 1em; 
 }
 
 section > * {
@@ -89,6 +84,7 @@ section:nth-of-type(5n+3) {
   background-color: var(--color3);
   --next-color: var(--color2);
   color: black;
+  font-size: 0.85em;
 }
 
 section:nth-of-type(5n+4) {
@@ -100,6 +96,7 @@ section:nth-of-type(5n+5) {
   background-color: var(--color5);
   --next-color: var(--color1);
   color: black;
+  font-size: 0.9em;
 }
 
 header:nth-child(odd), section:nth-child(odd) {
@@ -141,6 +138,7 @@ footer > p {
   position: relative;
   display: inline-block;
   width: 100%;
+  padding: 0 1em var(--angle-height) 1em;
 }
 
 .angle:after {
