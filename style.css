@@ -111,6 +111,7 @@ header:nth-child(odd), section:nth-child(odd) {
 
 header:nth-child(odd) > h2:first-child, section:nth-child(odd) > h2:first-child {
   margin-top: calc(-0.5 * var(--angle-height));
+  margin-bottom: 1em;
 }
 
 header:nth-child(even), section:nth-child(even) {
