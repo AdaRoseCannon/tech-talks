@@ -162,3 +162,23 @@ h2 {
   font-weight: bold;
   text-decoration: underline;
 }
+
+dt {
+  font-size: 1.2em;
+  font-weight: bold;
+  clear: both;
+  margin-top: 1em;
+}
+
+iframe {
+  max-width: 100%;
+  float: left;
+  margin-right: 1em;
+}
+
+dd > p::before {
+  content: "";
+  width: 10em;
+  display: block;
+  overflow: hidden;
+}
