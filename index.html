@@ -20,7 +20,7 @@
   </head>  
   <body>
     <header class="angle" style="color: black; --next-color: var(--color1);">
-      <h1><span style="color: var(--color4);">Ada's</span><br />
+      <h1><span style="color: var(--title-colour);">Ada's</span><br />
       &emsp;Twitch<br />
       &emsp;&emsp;Tech<br />
       &emsp;&emsp;&emsp;Talks
@@ -49,18 +49,23 @@
 
     <section class="angle">
       <h2>
-        Next Talk
+        Next Talk:<br />Episode 4, Linux on DeX for Web Development
       </h2>
       <p>
         You can see recordings from old broadcasts at the <a href="#prev">bottom of this page.</a><br />
       </p>
       <p>
 <!--         Stay tuned for the next Twitch Tech Talk by <a href="https://twitter.com/lady_ada_king" target="_blank">following Ada on Twitter</a> -->
-        The next talk is scheduled for:
-          <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=Ada%27s+Twitch+Talk&iso=20180810T1830&p1=136&ah=1">Thursday August 10th at 6.30pm UK time.</a>
+        The next talk is scheduled for: <b>Friday 30th November (12pm GMT), it's going to be a long one.</b>
       </p>
       <p>
-        The plan is just to live code some A-Frame and chat about it as we do.
+        You may remember this blog post from a while ago: <a href="https://medium.com/samsung-internet-dev/writing-software-using-a-phone-e71976f1f18d" target="_blank">Developing software using a phone</a>. That blog post talked about using Samsung DeX to access our favourite developer tools with termux and a code editor which I wrote.
+      </p>
+      <p>
+        There has been a new piece of tech which has been announced since then, Linux on DeX which is currently on beta trial for the Note 9. 
+      </p>
+      <p>
+        In this video I will stream trying out Linux on DeX watch the live stream and suggested stuff I should try out.
       </p>
     </section>
     
@@ -72,7 +77,7 @@
       <!-- Add a placeholder for the Twitch embed -->
       <div id="twitch-embed">
         <p>
-          If the player doesn't load you can watch it on twitch here: <a href="https://twitch.com/adaplaysoverwatch">AdaPlaysOverwatch on Twitch</a>
+          If the player doesn't load you can watch it on twitch here: <a href="https://twitch.tv/adaplaysoverwatch">AdaPlaysOverwatch on Twitch</a>
         </p>
       </div>
       <ul>
@@ -106,21 +111,49 @@
         <dt>1. Isomorphic Rendering</dt>
         <dd>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/fe6-HQLBJh8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p>
-            The topic, as voted for on twitter, will be Isomorphic Rendering and HyperHTML. Where I will walk through a demo of using HyperHTMl, Native es6 imports to set up a single template that works server side and client side.
+          <p>The topic, as voted for on twitter, will be Isomorphic Rendering and HyperHTML. Where I will walk through a demo of using HyperHTMl, Native es6 imports to set up a single template that works server side and client side.
           </p>
         </dd>
 
         <dt>2. Codebar and CSS Houdini feat Jo Balletti</dt>
         <dd>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/kSWHSY3BjSM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          <p>
-            The 2nd Episode. In which I chat with Jo Balletti from Samsung Internet (@thisisjofrank) about what it is like to be a mentor and some of the cutting edge web experiments she is building with new CSS features.
+          <p>In which I chat with Jo Balletti from Samsung Internet (@thisisjofrank) about what it is like to be a mentor and some of the cutting edge web experiments she is building with new CSS features.
 
 Sorry about the audio, the mic was playing up. 
 
 Intro music: Internet, the day when all humans will disappear by Monplaisir
           </p>
+        </dd>
+
+        <dt>3. Quick A-Frame prototyping</dt>
+        <dd>
+          <p>This was live stream exclusive. So no video. :(
+            
+I live coded a simple scene using A-Frame, demonstrating how to do lights, materials and animations.
+
+Intro music: Internet, the day when all humans will disappear by Monplaisir
+          </p>
+        </dd>
+
+        <dt>4. Developing Software Using A Phone with Linux on DeX </dt>
+        <dd>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bUxX6a5XtrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>Ruth (@rumyra) and I have a chat about using Midi Controllers on the Web and all the things they can be used for. We finish by using a midi controller to control a variable font.
+
+Intro music: Internet, the day when all humans will disappear by Monplaisir
+          </p>
+        </dd>
+
+        <dt>5. A chat with Ruth John about Web Midi!</dt>
+        <dd>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/yvpOIz7zAtY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>A while ago I wrote an article about using Samsung DeX to develop Software Using a Phone. This sequel looks at using Linux on DeX to take it even further.
+For more details about this read the accompanying article: <a href="https://medium.com/samsung-internet-dev/web-development-on-a-phone-updated-for-linux-on-dex-4b8ed6f693fc">Web Development on the Phone using Linux on DeX</a>
+
+            
+Intro music: Internet, the day when all humans will disappear by Monplaisir
+            </p>
         </dd>
       </dl>
     </section>
@@ -128,7 +161,7 @@ Intro music: Internet, the day when all humans will disappear by Monplaisir
     <footer>
       <p>
         &copy; Copyright 2018 Ada Rose Cannon.
-        <img src="https://adalytics-live.glitch.me/counter.png?color=black" alt="" aria-hidden="true" >
+        <img src="https://stats.ada.is/counter.png?fallback=live.ada.is&color=black" alt="" style="vertical-align: bottom;" aria-hidden="true">
       </p>
     </footer>
   </body>
