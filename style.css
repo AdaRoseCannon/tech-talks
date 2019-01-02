@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:300,400');
 
 :root {
-  
   --color1: #6B59FF;
   --color2: #CD84E8;
   --color3: #FFF0F5;
-  --color4: #E85B2F;
+  --color4: pink;
   --color5: #FFCB84;
+  --title-colour: #E85B2F;
   --angle-height: 10vw;
   --angle-dir: left;
   --next-color: var(--color1);
@@ -176,6 +176,10 @@ iframe {
   max-width: 100%;
   float: left;
   margin-right: 1em;
+}
+
+dd > p {
+  white-space: pre-line; 
 }
 
 dd > p::before {
